@@ -1,11 +1,9 @@
 function rangeOfNumbers(startNum, endNum) {
-	if (startNum > endNum && startNum < 1) {
+	if (startNum > endNum) {
 		return []
-	} else if (startNum <= endNum) {
-		const arr = []
-		arr.push(startNum)
-		rangeOfNumbers(startNum + 1, endNum)
-		return arr
+	} else {
+		const num = rangeOfNumbers(startNum, endNum - 1)
+		num.push(endNum)
+		return num
 	}
 }
-rangeOfNumbers(1, 6)
