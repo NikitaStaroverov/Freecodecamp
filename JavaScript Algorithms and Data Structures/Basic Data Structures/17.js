@@ -1,5 +1,31 @@
-/**Существует также способ поиска шаблонов в конце строк.Вы можете выполнить поиск в конце строк, используя символ знака доллара $ в конце регулярного выражения. */
+let users = {
+	Alan: {
+		age: 27,
+		online: true,
+	},
+	Jeff: {
+		age: 32,
+		online: true,
+	},
+	Sarah: {
+		age: 48,
+		online: true,
+	},
+	Ryan: {
+		age: 19,
+		online: true,
+	},
+}
 
-let caboose = 'The last car on a train is the caboose'
-let lastRegex = /caboose$/ // вернет true если caboose стоит в конце строки
-let result = lastRegex.test(caboose)
+function isEveryoneHere(userObj) {
+	// Only change code below this line
+	return 'Alan' in userObj &&
+		'Jeff' in userObj &&
+		'Sarah' in userObj &&
+		'Ryan' in userObj
+		? true
+		: false
+	// Only change code above this line
+}
+
+console.log(isEveryoneHere(users))

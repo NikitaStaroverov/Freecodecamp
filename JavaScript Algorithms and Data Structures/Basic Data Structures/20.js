@@ -1,5 +1,21 @@
-/**Ярлык для поиска цифровых символов - \d со строчной буквой d. Это равно классу символов [0-9], который ищет один символ любого числа от нуля до девяти. */
+let user = {
+	name: 'Kenneth',
+	age: 28,
+	data: {
+		username: 'kennethCodesAllDay',
+		joinDate: 'March 26, 2016',
+		organization: 'freeCodeCamp',
+		friends: ['Sam', 'Kira', 'Tomo'],
+		location: {
+			city: 'San Francisco',
+			state: 'CA',
+			country: 'USA',
+		},
+	},
+}
+function addFriend(userObj, friend) {
+	userObj.data.friends.push(friend)
+	return userObj.data.friends
+}
 
-let movieName = '2001: A Space Odyssey'
-let numRegex = /\d/gi // =[0-9]
-let result = movieName.match(numRegex).length
+console.log(addFriend(user, 'Pete'))

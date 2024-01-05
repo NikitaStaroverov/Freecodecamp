@@ -1,5 +1,7 @@
-/**Игнорировать Регистр при сопоставлении.Вы можете сопоставить оба регистра, используя так называемый флаг. Существуют и другие флаги, но здесь вы сосредоточитесь на флаге, который игнорирует регистр - флаге i.Примером использования этого флага является /ignorecase/i. Это регулярное выражение может соответствовать строкам ignorecase, IgnoreCase и IgnoreCase без учета регистра. */
+function popShift(arr) {
+	let popped = arr.pop() // Change this line
+	let shifted = arr.shift() // Change this line
+	return [shifted, popped]
+}
 
-let myString = 'freeCodeCamp'
-let fccRegex = /freeCodeCamp/i // регулярное выражение для поиска без учета регистра
-let result = fccRegex.test(myString)
+console.log(popShift(['challenge', 'is', 'not', 'complete']))

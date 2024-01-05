@@ -1,5 +1,16 @@
-/**Чтобы выполнить поиск или извлечь шаблон более одного раза, вы можете использовать флаг глобального поиска: g */
+function htmlColorNames(arr) {
+	// Only change code below this line
+	arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
+	// Only change code above this line
+	return arr
+}
 
-let twinkleStar = 'Twinkle, twinkle, little star'
-let starRegex = /Twinkle/gi
-let result = twinkleStar.match(starRegex) // Выведет ['Twinkle', 'twinkle']
+console.log(
+	htmlColorNames([
+		'DarkGoldenRod',
+		'WhiteSmoke',
+		'LavenderBlush',
+		'PaleTurquoise',
+		'FireBrick',
+	])
+)

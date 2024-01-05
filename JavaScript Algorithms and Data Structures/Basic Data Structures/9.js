@@ -1,7 +1,7 @@
-/**когда вам нужно сопоставить большой диапазон символов (например, каждую букву алфавита). К счастью, есть встроенная функция, которая делает это коротким и простым.
-Внутри набора символов вы можете определить диапазон символов для сопоставления, используя символ дефиса: -.
-Например, для сопоставления строчных букв от a до e вы могли бы использовать [a-e]. */
+function spreadOut() {
+	let fragment = ['to', 'code']
+	let sentence = ['learning', ...fragment, 'is', 'fun'] // Change this line
+	return sentence
+}
 
-let quoteSample = 'The quick brown fox jumps over the lazy dog.'
-let alphabetRegex = /[a-z]/gi // делает сопоставление всех букв в строке
-let result = quoteSample.match(alphabetRegex)
+console.log(spreadOut())

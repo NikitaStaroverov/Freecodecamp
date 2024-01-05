@@ -1,7 +1,11 @@
-/**Использование дефиса (-) для сопоставления диапазона символов не ограничивается буквами. Это также работает для сопоставления диапазона чисел.
-Например, /[0-5]/ соответствует любому числу от 0 до 5, включая 0 и 5.
-Кроме того, можно объединить диапазон букв и цифр в один набор символов  (/[a-z0-9]/). */
+function quickCheck(arr, elem) {
+	// Only change code below this line
+	if (arr.indexOf(elem) !== -1) {
+		return true
+	} else {
+		return false
+	}
+	// Only change code above this line
+}
 
-let quoteSample = 'Blueberry 3.141592653s are delicious.'
-let myRegex = /[h-s2-6]/gi // выводит соответствия в диапазоне от h до s и от 2 до 6
-let result = quoteSample.match(myRegex)
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'))

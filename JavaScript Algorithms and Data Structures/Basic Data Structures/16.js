@@ -1,5 +1,16 @@
-/**В более ранней задаче вы использовали символ курсора (^) внутри набора символов для создания отрицательного набора символов в форме [^thingsThatWillNotBeMatched]. За пределами набора символов курсор используется для поиска шаблонов в начале строк. */
+let foods = {
+	apples: 25,
+	oranges: 32,
+	plums: 28,
+	bananas: 13,
+	grapes: 35,
+	strawberries: 27,
+}
 
-let rickyAndCal = 'Cal and Ricky both like racing.'
-let calRegex = /^Cal/ // вернет true если Cal стоит в начале строки
-let result = calRegex.test(rickyAndCal)
+// Only change code below this line
+delete foods.oranges
+delete foods.plums
+delete foods.strawberries
+// Only change code above this line
+
+console.log(foods)

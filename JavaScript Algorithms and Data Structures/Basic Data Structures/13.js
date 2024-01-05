@@ -1,13 +1,13 @@
-/**В последнем задании использовался знак "плюс +" для поиска символов, которые встречаются один или более раз. Также есть опция, которая сопоставляет символы, которые встречаются ноль или более раз.
-Символ для этого - звездочка: *.*/
-//let soccerWord = "gooooooooal!";
-//let gPhrase = "gut feeling";
-//let oPhrase = "over the moon";
-//let goRegex = /go*/
-//soccerWord.match(goRegex);
-//gPhrase.match(goRegex);
-//oPhrase.match(goRegex);
-//По порядку три вызова match вернули бы значения ["goooooooo"], ["g"] и null.
+const foods = {
+	apples: 25,
+	oranges: 32,
+	plums: 28,
+}
 
-let chewieRegex = /Aa*/
-let result = chewieQuote.match(chewieRegex)
+// Only change code below this line
+foods.bananas = 13
+foods.grapes = 35
+foods.strawberries = 27
+// Only change code above this line
+
+console.log(foods)
